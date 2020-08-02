@@ -1,0 +1,612 @@
+html, body {
+margin-left: 20;
+padding: 0;
+}
+
+.gradient-button {
+  margin: 10px;
+  font-family: "Arial Black", Gadget, sans-serif;
+  font-size: 20px;
+  padding: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: #FFF;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  width: 200px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  cursor: pointer;
+  display: inline-block;
+  border-radius: 25px;
+}
+.gradient-button:hover{
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  margin: 8px 10px 12px;
+}
+.homeimg .getstarted{
+
+display: flex;
+color: aquaviolet;
+border-radius: 30px;
+margin-left: 100px;
+margin-top: 100px;
+margin-bottom: 10px;
+}
+#caloriebutton{
+color: DeepSkyBlue;
+border-radius: 30px;
+margin-left: 100px;
+margin-top: 1px;
+margin-bottom: 10px;
+margin: 10px;
+font-family: "Arial Black", Gadget, sans-serif;
+font-size: 20px;
+padding: 15px;
+text-align: center;
+text-transform: uppercase;
+transition: 0.5s;
+background-size: 200% auto;
+color: #FFF;
+box-shadow: 0 0 20px #eee;
+border-radius: 10px;
+width: 150px;
+box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+cursor: pointer;
+display: inline-block;
+border-radius: 25px;
+
+}
+#exercisebutton{
+color: DeepSkyBlue;
+border-radius: 30px;
+margin-left: 100px;
+margin-top: 1px;
+margin-bottom: 1px;
+margin: 10px;
+font-family: "Arial Black", Gadget, sans-serif;
+font-size: 20px;
+padding: 15px;
+text-align: center;
+text-transform: uppercase;
+transition: 0.5s;
+background-size: 200% auto;
+color: #FFF;
+box-shadow: 0 0 20px #eee;
+border-radius: 10px;
+width: 150px;
+box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+cursor: pointer;
+display: inline-block;
+border-radius: 25px;
+}
+.container{
+background-blend-mode: soft-light;
+}
+
+.container #explain{
+  position: absolute;
+  top: 10%;
+  left: 2%;
+  color: rgb(38, 20, 54);
+  font-size: 20px; 
+  padding: 5px 5px;
+  border: none; 
+
+}
+
+.container #btn {
+position: absolute;
+top: 60%; 
+left: 17%;
+transform: translate(-50%, -50%);
+-ms-transform: translate(-50%, -50%); 
+background-color: DeepSkyBlue; 
+color: white;
+font-size: 16px; 
+padding: 12px 24px;
+border: none; 
+cursor: pointer;
+border-radius: 5px; 
+margin: 10px;
+font-family: "Arial Black", Gadget, sans-serif;
+font-size: 20px;
+padding: 15px;
+text-align: center;
+text-transform: uppercase;
+transition: 0.5s;
+background-size: 200% auto;
+color: #FFF;
+box-shadow: 0 0 20px #eee;
+border-radius: 10px;
+width: 150px;
+box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+cursor: pointer;
+display: inline-block;
+border-radius: 25px;
+}
+.container #btn1 {
+  position: absolute;
+  top: 50%; 
+  left: 17%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%); 
+  background-color:DeepSkyBlue; 
+  color: white;
+  font-size: 16px; 
+  padding: 12px 24px;
+  border: none; 
+  cursor: pointer;
+  border-radius: 5px; 
+  margin: 10px;
+  font-family: "Arial Black", Gadget, sans-serif;
+  font-size: 20px;
+  padding: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: #FFF;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  width: 150px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  cursor: pointer;
+  display: inline-block;
+  border-radius: 25px;
+}
+.container #btn2 {
+  position: absolute;
+  top: 70%; 
+  left: 17%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%); 
+  background-color: DeepSkyBlue; 
+  color: white;
+  font-size: 16px; 
+  padding: 12px 24px;
+  border: none; 
+  cursor: pointer;
+  border-radius: 5px; 
+  margin: 10px;
+  font-family: "Arial Black", Gadget, sans-serif;
+  font-size: 20px;
+  padding: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: #FFF;
+  box-shadow: 0 0 20px DeepSkyBlue;
+  border-radius: 10px;
+  width: 170px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  cursor: pointer;
+  display: inline-block;
+  border-radius: 25px;
+}
+.container #befit{
+position: absolute;
+top: 60%; 
+left: 27%;
+color: rgb(purple);
+font-size: 16px; 
+padding: 12px 24px;
+
+
+
+}
+.calorieback{
+background-blend-mode: soft-light;
+}
+.container #done{
+position: absolute;
+top: 70%; 
+left: 17%;
+
+background-color: DeepSkyBlue; 
+color: white;
+font-size: 16px; 
+padding: 12px 24px;
+border: none; 
+cursor: pointer;
+  margin: 10px;
+  font-family: "Arial Black", Gadget, sans-serif;
+  font-size: 20px;
+  padding: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: #FFF;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  width: 150px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  cursor: pointer;
+  display: inline-block;
+  border-radius: 25px;
+}
+.container #homebutton{
+position: absolute;
+top: 69%;
+left: 3%;
+
+background-color: DeepSkyBlue; 
+color: white;
+font-size: 16px; 
+padding: 12px 24px;
+border: none; 
+cursor: pointer;
+border-radius: 5px; 
+margin: 10px;
+font-family: "Arial Black", Gadget, sans-serif;
+font-size: 20px;
+text-align: center;
+text-transform: uppercase;
+transition: 0.5s;
+background-size: 200% auto;
+color: #FFF;
+box-shadow: 0 0 20px #eee;
+border-radius: 10px;
+width: 150px;
+box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+cursor: pointer;
+display: inline-block;
+border-radius: 25px;
+}
+.container #age{
+position: absolute;
+top: 35%;
+left: 13%;
+font-size: 16px; 
+padding: 5px,7px;
+border: none;  
+}.container #height{
+position: absolute;
+top: 30%;
+left: 13%;
+font-size: 16px; 
+padding: 5px,7px;
+
+}
+.container #befitheading{
+position: absolute;
+top: 5%;
+left: 16%;
+transform: translate(-50%, -50%);
+-ms-transform: translate(-50%, -50%); 
+color: DeepSkyBlue;
+font-size: 40px; 
+padding: 12px 24px;
+border: none; 
+cursor: pointer;
+
+
+}
+
+
+.container #getheading{
+  position: absolute;
+  top: 10%;
+  left: 3%;
+  color: rgb(36, 24, 63);
+  font-size: 30px; 
+  border: none; 
+  
+  }
+
+.container #addmatter{
+position: absolute;
+top: 15%;
+left: 3%;
+font-size: 20px; 
+border: none; 
+
+}
+
+.container #age{
+position: absolute;
+size : 8px;
+top: 30%;
+left: 15%;
+font-size: 10px; 
+padding: 2px,2px;
+border: none;  
+}
+.container #height{
+position: absolute;
+size: 8px;
+top: 35%;
+left: 15%;
+font-size: 10px; 
+padding: 2px,2px;
+border: none;  
+}
+.container #EnterAge{
+  position: absolute;
+  top: 30%;
+  left: 3%;
+  font-size: 20px; 
+  border: none; 
+  cursor: pointer;
+
+}
+.container #EnterHeight{
+    position: absolute;
+    top: 35%;
+    left: 3%;
+    font-size: 20px; 
+    border: none; 
+    cursor: pointer;
+}     
+
+.container #veggeis{
+position: absolute;
+top: 10%;
+left: 2%;
+font-size: 10px; 
+padding: 2px,2px;
+}
+.container #fruits{
+position: absolute;
+top: 10%;
+left: 17%;
+font-size: 10px; 
+padding: 2px,2px;
+}  
+.container #beverages{
+position: absolute;
+top: 20%;
+left: 2%;
+font-size: 10px; 
+padding: 2px,2px;
+}.container #dryfruits{
+position: absolute;
+top: 20%;
+left: 17%;
+font-size: 10px; 
+padding: 2px,2px;
+}  
+.container #add{
+position: absolute;
+top: 45%;
+left: 11%;
+
+background-color: DeepSkyBlue; 
+color: white;
+font-size: 16px; 
+padding: 12px 24px;
+border: none; 
+cursor: pointer;
+border-radius: 5px; 
+margin: 10px;
+font-family: "Arial Black", Gadget, sans-serif;
+font-size: 20px;
+padding: 15px;
+text-align: center;
+text-transform: uppercase;
+transition: 0.5s;
+background-size: 200% auto;
+color: #FFF;
+box-shadow: 0 0 20px #eee;
+border-radius: 10px;
+width: 150px;
+box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+cursor: pointer;
+display: inline-block;
+border-radius: 25px;
+}
+.container #landing{
+position: absolute;
+top: 70%;
+left: 15%;
+transform: translate(-50%, -50%);
+-ms-transform: translate(-50%, -50%); 
+background-color: DeepSkyBlue; 
+color: white;
+font-size: 16px; 
+padding: 12px 24px;
+border: none; 
+cursor: pointer;
+border-radius: 5px; 
+margin: 10px;
+font-family: "Arial Black", Gadget, sans-serif;
+font-size: 20px;
+padding: 15px;
+text-align: center;
+text-transform: uppercase;
+transition: 0.5s;
+background-size: 200% auto;
+color: #FFF;
+box-shadow: 0 0 20px #eee;
+border-radius: 10px;
+width: 200px;
+box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+cursor: pointer;
+display: inline-block;
+border-radius: 25px;
+}
+
+.container #para{
+  position: absolute;
+  top: 20%;
+  left: 2%;
+  color: rgb(38, 20, 54);
+  font-size: 20px; 
+  padding: 5px 5px;
+  border: none; 
+
+}
+.container #veggehead{
+position: absolute;
+top: 6%;
+left: 3%;
+
+font-size: 20px; 
+
+border: none; 
+cursor: pointer;
+
+
+}.container #fruithead{
+position: absolute;
+top: 6%;
+left: 17%;
+
+font-size: 20px; 
+
+border: none; 
+cursor: pointer;
+
+
+}.container #beveragehead{
+position: absolute;
+top: 16%;
+left: 3%;
+
+font-size: 20px; 
+
+border: none; 
+cursor: pointer;
+
+
+}.container #nonveghead{
+position: absolute;
+top: 26%;
+left: 17%;
+
+font-size: 20px; 
+
+border: none; 
+cursor: pointer;
+
+
+}.container #junkfoodhead{
+position: absolute;
+top: 26%;
+left: 2%;
+
+font-size: 20px; 
+
+border: none; 
+cursor: pointer;
+
+
+}.container #dryfruithead{
+position: absolute;
+top: 16%;
+left: 17%;
+font-size: 20px; 
+border: none; 
+cursor: pointer;
+
+
+}.container #wheathead{
+position: absolute;
+top: 35%;
+left: 2%;
+
+font-size: 20px; 
+
+border: none; 
+cursor: pointer;
+
+
+}
+.container #ricehead{
+position: absolute;
+top: 35%;
+left: 17%;
+
+font-size: 20px; 
+
+border: none; 
+cursor: pointer;
+
+
+}
+.container #resultelement{
+  position: absolute;
+  top: 15%;
+  left: 17%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%); 
+  color: white;
+  font-size: 40px; 
+  padding: 12px 24px;
+  border: none; 
+  cursor: pointer;
+  
+  
+  }
+.container #junkfood{
+position: absolute;
+top: 30%;
+left: 2%;
+font-size: 10px; 
+padding: 2px,2px;
+}
+.container #non-veg{
+  position: absolute;
+  top: 30%;
+  left: 17%;
+  font-size: 10px; 
+  padding: 2px,2px;
+  }
+  .container #wheat{
+    position: absolute;
+    top: 39%;
+    left: 2%;
+    font-size: 10px; 
+    padding: 2px,2px;
+    }
+
+.container #rice{
+position: absolute;
+top:39%;
+left: 17%;
+font-size: 10px; 
+padding: 2px,2px;
+}
+.container #home1{
+  position: absolute;
+  top: 75%;
+  left: 7%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%); 
+  background-color: DeepSkyBlue; 
+  color: white;
+  font-size: 16px; 
+  padding: 12px 24px;
+  border: none; 
+  cursor: pointer;
+  margin: 10px;
+  font-family: "Arial Black", Gadget, sans-serif;
+  font-size: 20px;
+  padding: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: #FFF;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  width: 150px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  cursor: pointer;
+  display: inline-block;
+  border-radius: 25px; 
+  }
