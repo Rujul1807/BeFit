@@ -170,7 +170,7 @@
         enterHeight.hide();
         ageinput.hide();
         heightinput.hide();
-
+       test.show();
         HOME1.mousePressed(()=>{
             Befit.show();
         button.show();
@@ -198,6 +198,7 @@
         exercise.hide();
         exercise2.hide();
         exercise1.hide();
+        test.hide();
         })
         donebutton.mousePressed(exercisepage);
     })
@@ -210,7 +211,7 @@
 
     function calculate(){
         Dryfruitsval=int(Dryfruits.value()*4);
-        Junkfoodval=int(Junkfood.value());
+        Junkfoodval=int(Junkfood.value()*300);
         BEVERAGESval=int(BEVERAGES.value()*2);
         nonvegval=int(NONVEG.value());
         riceval=int(RICE.value()*200);
@@ -224,12 +225,12 @@
     result.position(10,340);
 
     if(total<1900&&ageval<=10&&heightval<=140){
-        test.html( "calories need to be burnt="+0+"cals");
+        test.html( "calories that needs to be burnt="+0+"cals");
         test.position(10,370);
 
     }
     if( total >= 1900&& ageval<=10&& heightval<=140){
-    test.html(total-1900);
+    test.html("caloriesthat needs to be burnt="+(total-1900)+"cals");
     test.position(10,370);
     
     }
@@ -274,14 +275,14 @@
             exercise2.position(50,110);
         // exercise1.html("")
         }
-    /*if((total-1900)<200){
+    if((total-1900)<200){
         exercise.html("Brisk Walking- 30 mins OR");
         exercise.position(50,50);
         exercise1.html("Yoga - 30 mins OR");
         exercise1.position(50,80);
         exercise2.html("Jogging - 20 mins");
         exercise2.position(50,110);
-    } */
+    } 
 
     }
 
