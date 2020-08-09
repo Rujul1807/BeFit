@@ -27,7 +27,9 @@ var donebutton;
 var Addbutton;
 var result;
 var Landing, Para;
-var veghead,fruhead,beverhead,nonhead,junkhead,richead,wheahead,dryhead;
+var Pulses;
+var pulsesval;
+var veghead,fruhead,beverhead,nonhead,junkhead,richead,wheahead,dryhead,pulseshead;
 function setup(){
 result=createElement("h2");
 button=select('#btn');
@@ -49,6 +51,8 @@ Befit=select('#befitheading');
 Befit.hide();
 HOME1=select('#home1');
 HOME1.hide();
+Pulses=select('#pulses');
+Pulses.hide();
 exercise=createElement("h3")
 exercise1=createElement("h3");
 exercise2=createElement("h3");
@@ -56,6 +60,8 @@ donebutton=select('#done');
 donebutton.hide();
 //result=select('#resultelement');
 veghead=select('#veggehead');
+pulseshead=select('#pulsehead');
+pulseshead.hide();
 veghead.hide();
 fruhead=select('#fruithead');
 fruhead.hide();
@@ -144,6 +150,7 @@ Befit.hide();
 button.hide();
 button1.hide();
 button2.hide();
+Pulses.show();
 vegetables.show();
 Fruits.show();
 Dryfruits.show();
@@ -152,6 +159,7 @@ Addbutton.show();
 donebutton.show();
 Addbutton.mousePressed(calculate);
 veghead.show();
+pulseshead.show();
 fruhead.show();
 dryhead.show();
 nonhead.show();
@@ -177,11 +185,13 @@ Befit.show();
 button.show();
 Explain.show();
 vegetables.hide();
+Pulses.hide();
 Fruits.hide();
 Dryfruits.hide();
 BEVERAGES.hide();
 Addbutton.hide();
 veghead.hide();
+pulseshead.hide();
 fruhead.hide();
 dryhead.hide();
 nonhead.hide();
@@ -215,17 +225,18 @@ function calculate(){
 Dryfruitsval=int(Dryfruits.value()*4);
 Junkfoodval=int(Junkfood.value()*300);
 BEVERAGESval=int(BEVERAGES.value()*2);
-nonvegval=int(NONVEG.value());
+nonvegval=int(NONVEG.value()*220);
 riceval=int(RICE.value()*200);
 wheatval=int(WHEAT.value()*4);
+pulsesval=int(Pulses.value()*104);
 veggeval=int(vegetables.value()*70);
 fruitval=int(Fruits.value()*65);
 ageval=int(ageinput.value());
 heightval=int(heightinput.value());
 if(Dryfruitsval!==null||Junkfoodval!==null|| BEVERAGESval!==null  || nonvegval!==null 
-|| riceval!==null  || wheatval!==null  ||veggeval!==null||fruitval!==null){
+|| riceval!==null  || wheatval!==null  ||veggeval!==null||fruitval!==null||pulsesval!=null){
 
-total=Dryfruitsval+veggeval+fruitval+BEVERAGESval+nonvegval+wheatval+riceval+Junkfoodval;
+total=Dryfruitsval+veggeval+fruitval+BEVERAGESval+nonvegval+wheatval+riceval+Junkfoodval+pulsesval;
 result.html("Calorie intake:"+total+"cals");
 result.position(10,340);
 
@@ -239,20 +250,20 @@ test.html("calories that needs to be burnt="+(total-1900)+"cals");
 test.position(10,370);
 
 }
-if(total>=2400 &&ageval<=14&&heightval<=180){
+if(total>=2400 &&ageval<=14&&heightval<=200){
 test.html("calories that needs to be burnt="+(total-2400)+"cals");
 test.position(10,370); 
 }
-if(total<2400&&ageval<=14&&heightval<=180){
+if(total<2400&&ageval<=14&&heightval<=200){
 test.html( "calories to be burnt:"+0+"cals");
 test.position(10,370);
 
 }
-if(total>=2600 &&ageval<=18&&heightval<=190){
+if(total>=2600 &&ageval<=18&&heightval<=200){
 test.html("calories that needs to be burnt="+(total-2600)+"cals");
 test.position(10,370); 
 }
-if(total<2600&&ageval<=18&&heightval<=190){
+if(total<2600&&ageval<=18&&heightval<=200){
 test.html( "calories to be burnt:"+0+"cals");
 test.position(10,370);
 
@@ -266,6 +277,15 @@ test.html( "calories to be burnt:"+0+"cals");
 test.position(10,370);
 
 }
+if(total>=2600 &&ageval<=35&&heightval<=200){
+    test.html("calories that needs to be burnt="+(total-2600)+"cals");
+    test.position(10,370); 
+    }
+    if(total<2600 && ageval<=35 && heightval<=200){
+    test.html( "calories to be burnt:"+0+"cals");
+    test.position(10,370);
+    
+    }
 
 
 }
@@ -281,12 +301,14 @@ button.hide();
 button1.hide();
 button2.hide();
 vegetables.hide();
+Pulses.hide();
 Fruits.hide();
 Dryfruits.hide();
 BEVERAGES.hide();
 Addbutton.hide();
 donebutton.hide();
 veghead.hide();
+pulseshead.hide();
 fruhead.hide();
 dryhead.hide();
 nonhead.hide();
@@ -376,7 +398,6 @@ exercise1.position(50,110);
 exercise2.html("cycling- 30 mins");
 exercise2.position(50,150);
 }
-
 if((total-2400)>=800){
 exerciseheadline.html("Do any 1 of the exercises:");
 exerciseheadline.position(50,30);
@@ -389,60 +410,60 @@ exercise2.position(50,150);
 }
 
 
-if((total-2600)>=200){
-exerciseheadline.html("Do any 1 of the exercises:");
-exerciseheadline.position(50,30);
-exercise.html("Skipping-100 times ");
-exercise.position(50,70);
-exercise1.html("Dancing-20 mins ");
-exercise1.position(50,110);
-exercise2.html("Swimming- 30 mins");
-exercise2.position(50,150);
-}
 
 if((total-2600)<200){
-exerciseheadline.html("Do any 1 of the exercises:");
-exerciseheadline.position(50,30);
-exercise.html("Brisk Walking- 30 mins ");
-exercise.position(50,70);
-exercise1.html("Yoga - 30 mins ");
-exercise1.position(50,110);
-exercise2.html("Jogging - 20 mins");
-exercise2.position(50,150);
-}
-if((total-2600)>=500){
-exerciseheadline.html("Do any 1 of the exercises:");
-exerciseheadline.position(50,30);
-exercise.html("Running-20 min ");
-exercise.position(50,70);
-exercise1.html("Dancing-30 mins ");
-exercise1.position(50,110);
-exercise2.html("cycling- 30 mins");
-exercise2.position(50,150);
-}
-
-if((total-2600)>=800){
-exerciseheadline.html("Do any 1 of the exercises:");
-exerciseheadline.position(50,30);
-exercise.html("step aerobics-30 min ");
-exercise.position(50,70);
-exercise1.html(" Play ultimate frisbee-30 mins ");
-exercise1.position(50,110);
-exercise2.html("cycling- 45 mins");
-exercise2.position(50,150);
-}
-
-
-if((total-2800)>=200){
-exerciseheadline.html("Do any 1 of the exercises:");
-exerciseheadline.position(50,30);
-exercise.html("Skipping-100 times ");
-exercise.position(50,70);
-exercise1.html("Dancing-20 mins ");
-exercise1.position(50,110);
-exercise2.html("Swimming- 30 mins");
-exercise2.position(50,150);
-}
+    exerciseheadline.html("Do any 1 of the exercises:");
+    exerciseheadline.position(50,30);
+    exercise.html("Brisk Walking- 30 mins ");
+    exercise.position(50,70);
+    exercise1.html("Yoga - 30 mins ");
+    exercise1.position(50,110);
+    exercise2.html("Jogging - 20 mins");
+    exercise2.position(50,150);
+    }
+    if((total-2600)>=200){
+        exerciseheadline.html("Do any 1 of the exercises:");
+        exerciseheadline.position(50,30);
+        exercise.html("Skipping-100 times ");
+        exercise.position(50,70);
+        exercise1.html("Dancing-20 mins ");
+        exercise1.position(50,110);
+        exercise2.html("Swimming- 30 mins");
+        exercise2.position(50,150);
+        }
+        if((total-2600)>=500){
+            exerciseheadline.html("Do any 1 of the exercises:");
+            exerciseheadline.position(50,30);
+            exercise.html("Running-20 min ");
+            exercise.position(50,70);
+            exercise1.html("Dancing-30 mins ");
+            exercise1.position(50,110);
+            exercise2.html("cycling- 30 mins");
+            exercise2.position(50,150);
+            }
+    
+    if((total-2600)>=800){
+    exerciseheadline.html("Do any 1 of the exercises:");
+    exerciseheadline.position(50,30);
+    exercise.html("step aerobics-30 min ");
+    exercise.position(50,70);
+    exercise1.html(" Play ultimate frisbee-30 mins ");
+    exercise1.position(50,110);
+    exercise2.html("cycling- 45 mins");
+    exercise2.position(50,150);
+    }
+    
+    
+    if((total-2800)>=200){
+    exerciseheadline.html("Do any 1 of the exercises:");
+    exerciseheadline.position(50,30);
+    exercise.html("Skipping-100 times ");
+    exercise.position(50,70);
+    exercise1.html("Dancing-20 mins ");
+    exercise1.position(50,110);
+    exercise2.html("Swimming- 30 mins");
+    exercise2.position(50,150);
+    }
 
 if((total-2800)<200){
 exerciseheadline.html("Do any 1 of the exercises:");
